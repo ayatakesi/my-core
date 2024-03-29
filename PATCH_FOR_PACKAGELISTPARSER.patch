@@ -1,0 +1,18 @@
+diff --git a/libpackagelistparser/Android.mk b/libpackagelistparser/Android.mk
+index c8be050e0..563fdc66a 100644
+--- a/libpackagelistparser/Android.mk
++++ b/libpackagelistparser/Android.mk
+@@ -13,6 +13,7 @@ LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/include
+ LOCAL_CLANG := true
+ LOCAL_SANITIZE := integer
+ 
++LOCAL_EXPORT_CFLAGS += -isystem $(LOCAL_PATH)/../include
+ include $(BUILD_SHARED_LIBRARY)
+ 
+ #########################
+@@ -29,4 +30,5 @@ LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/include
+ LOCAL_CLANG := true
+ LOCAL_SANITIZE := integer
+ 
++LOCAL_EXPORT_CFLAGS += -isystem $(LOCAL_PATH)/../include
+ include $(BUILD_STATIC_LIBRARY)

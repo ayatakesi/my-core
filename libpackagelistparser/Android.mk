@@ -13,6 +13,7 @@ LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/include
 LOCAL_CLANG := true
 LOCAL_SANITIZE := integer
 
+LOCAL_EXPORT_CFLAGS += -isystem $(LOCAL_PATH)/../include
 include $(BUILD_SHARED_LIBRARY)
 
 #########################
@@ -29,4 +30,5 @@ LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/include
 LOCAL_CLANG := true
 LOCAL_SANITIZE := integer
 
+LOCAL_EXPORT_CFLAGS += -isystem $(LOCAL_PATH)/../include
 include $(BUILD_STATIC_LIBRARY)
