@@ -1,5 +1,5 @@
 # libpackagelistparser
-GNU Emacs30.0.50に含まれる`java/INSTALL`にしたがってパッチを適用したlibpackagelistparserモジュール(libselinuxの依存モジュール)のレポジトリ。
+GNU Emacs30.0.50に含まれる`java/INSTALL`に記載されているlibpackagelistparserモジュール(libselinuxの依存モジュール)に独自に修正を加えたレポジトリ。
 
 # 作成した手順
 1. [Google Gitのcore](git clone https://android.googlesource.com/platform/system/core)をclone
